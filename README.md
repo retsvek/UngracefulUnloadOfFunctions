@@ -6,7 +6,7 @@ This is a quick repro to show how Azure Functions do not shut down gracefully bu
 2. Update `Program.cs` (line 15) with the connection string to the Azure Service Bus you created in #1.
 3. Create `local.settings.json` and add the connection string to the Azure Service Bus you created in #1 (if you want to run locally).
 4. Create an Azure SQL Database and run the `database.sql` script to create the tables needed.
-5. Update `SleepFunction.cs` (line 16) and `Program.cs` (line 17) with the connection string to the Azure SQL DB you created in #3.
+5. Update `SleepFunction.cs` (line 16) and `Program.cs` (line 17) with the connection string to the Azure SQL DB you created in #4.
 6. Publish the SimpleFunctionApp to an App Service Plan host
 7. Create a new Application setting for the function app named `MyAzureServiceBusConnectionString` and set it to the connection string from #1.
 
